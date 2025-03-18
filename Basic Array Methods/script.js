@@ -44,3 +44,41 @@ document.getElementById("pop").innerHTML = ` pop jo ha wo last element ko hata d
 let push = array.push("Daniyal");
 let a = document.getElementById("push").innerHTML = `Array ke naya length hai: ${array}`; 
 console.log(a); 
+
+
+let b = array.unshift("danyo");
+let c = document.getElementById("unshift").innerHTML = array;
+
+
+let num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,]
+let alfabets =["A","B","C","D","E","F","G","H","","I","J","K","L","M","N","O","p","q","r","s","t","u","v","w","x","y","z"]
+let words = num.concat(alfabets);
+let fr = words.join(" * ");
+
+let d = document.getElementById("concat").innerHTML = fr;
+
+
+let num1 = 0;
+function playNow() {
+  let output = ""; // Ek variable jisme hum "a" ko concatenate karenge
+  for(num1; num1 < 10; num1++) {
+    output += "*"; // Har iteration mein "a" ko output variable mein add karenge
+  }
+  document.getElementById("asdf").innerHTML = output; // Final result ko HTML mein set karenge
+  
+}
+
+let girlfriend = ["angle","queens","starts"]
+let boyfriend = ["jhon","doe","stafon"]
+let friendship = ['smooks','print','sends']
+let bakwas = girlfriend.concat(friendship,boyfriend)
+document.getElementById("merge").innerHTML = bakwas;
+
+
+
+
+let array4 =[ ["ali", "abbas", "hussain", "yawar"],["a","b","c","d","e"],[1,2,3,4,5]]
+let array5 = array4.flat();
+document.getElementById("merge").innerHTML = array5;
+
+
