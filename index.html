@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+<style>
+     body {
+            background-color: white;
+            transition: background-color 4s;
+        }
+</style>
+<body onload="changeBackgroundColor()">
+<p id="average"></p>
+    <h1>javaScript paratice</h1>
+    <h1>Welcome to the Page!</h1>
+    <p>The background color will change once the page is fully loaded.</p>
+    <p id="demo"></p>
+    <button onclick="displayDate()" >click me!</button>
+    <button onclick="this.innerHTML=Date()" >click me!</button>
+    <!-- 1. onchange - When an HTML element has been changed -->
+    <select id="mySelect" onchange="alert('You selected ' + this.value)">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Cherry">Cherry</option>
+    </select>
+    <!-- 3. onmouseover - When the user moves the mouse over an HTML element -->
+    <div onmouseover="this.style.backgroundColor='yellow'" style="width:200px;height:100px;border:1px solid black;">
+        Hover over me!
+    </div>
+    <!-- 4. onmouseout - When the user moves the mouse away from an HTML element -->
+    <div onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" style="width:200px;height:100px;border:1px solid black;">
+        Hover over and out of me!
+    </div>
+    <!-- 5. onkeydown - When the user presses a keyboard key -->
+    <input type="text" onkeydown="alert('Key pressed: ' + event.key)" placeholder="Press any key">
+    <!-- 6. onload - When the browser has finished loading the page -->
+
+</body>
+</html>
