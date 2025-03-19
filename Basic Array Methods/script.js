@@ -82,3 +82,20 @@ let array5 = array4.flat();
 document.getElementById("merge").innerHTML = array5;
 
 
+
+let number = [1,0,2,3,4,5]
+const number2 = number.flatMap(x => (x * 10))
+
+document.getElementById("flat").innerHTML = number2;
+
+let animals = ["alex", "donkey", "raham", "jhone"]
+let people2 = animals.splice(1,2)
+// console.log(animals);
+document.getElementById("people").innerHTML = people2
+
+
+
+
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+fruits.splice(0, 1, "whatever");  
+console.log(fruits); 
